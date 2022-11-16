@@ -40,3 +40,21 @@ function populateList (arr) {
     }
 }
 populateList(shoppingItems);
+
+function changeListStyle() {
+    shoppingListElement.classList.remove("circleList");
+    shoppingListElement.classList.add("squareList");
+}
+
+changeListStyle();
+
+function makeGreen() {
+    const allListItems = document.querySelectorAll(".shopping li");
+    for (let i = 0; i < allListItems.length; i++) {
+        if (allListItems[i].textContent.includes("green")) {
+            allListItems[i].classList.add("green");
+        }
+    }
+}
+
+makeGreen();
