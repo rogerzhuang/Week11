@@ -23,4 +23,9 @@ function circleArea(radius) {
 
 let r = prompt("Please input a number");
 let area = circleArea(r).toFixed(2);
-alert(`The area of a circle with radius ${r} is ${area}`);
+//alert(`The area of a circle with radius ${r} is ${area}`);
+
+let radiusPara = document.querySelector("#radius");
+radiusPara.textContent += `: ${r}`;
+let areaPara = document.querySelector("#result");
+areaPara.textContent += `: ${area}`;
